@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3BA4F0"/><stop offset="1" stop-color="#5B6CF0"/></linearGradient><radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#3BA4F0" stop-opacity="0.2"/><stop offset="1" stop-color="#3BA4F0" stop-opacity="0"/></radialGradient><clipPath id="c"><rect width="1200" height="760" rx="24"/></clipPath><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern><style>
+  .f { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+  .pulse { animation: pulse 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .pulse2 { animation: pulse 9s ease-in-out infinite reverse; transform-box: fill-box; transform-origin: center; }
+  @keyframes pulse { 0%,100% { opacity: .7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+  .spin { animation: spin 36s linear infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .live { animation: blink 2s ease-in-out infinite; }
+  @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+</style><style>
+  .flow { stroke-dasharray: 6 8; animation: flow 1.1s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -28; } }
+</style></defs>
+<g clip-path="url(#c)">
+  <rect width="1200" height="760" fill="#101018"/><rect width="1200" height="760" fill="url(#grid)"/>
+  <ellipse class="pulse" cx="600" cy="380.0" rx="560" ry="380.0" fill="url(#gl)"/>
+  <rect width="1200" height="4" fill="url(#g)"/>
+</g>
+<rect x=".5" y=".5" width="1199" height="759" rx="24" fill="none" stroke="#fff" stroke-opacity=".08"/>
+<text x="50" y="52" class="f" font-size="15" font-weight="700" letter-spacing="3" fill="#3BA4F0">VENDRA · MULTI-TENANT SALES AGENT</text>
+<text x="50" y="90" class="f" font-size="32" font-weight="800" fill="#F5F5F8">Agentic RAG + secured MCP server</text>
+<g transform="translate(774 48)">
+  <rect width="376" height="40" rx="20" fill="#3DD68C" fill-opacity=".12" stroke="#3DD68C" stroke-opacity=".55"/>
+  <circle class="live" cx="22" cy="20" r="6" fill="#3DD68C"/>
+  <text x="38" y="26" class="f" font-size="16" font-weight="700" fill="#F5F5F8">92.4% accuracy · 1.2% hallucination</text>
+</g>
+<g class="rise">
+  <rect x="50" y="128" width="330" height="124" rx="16" fill="#181822" stroke="#3BA4F0" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="72" y="146" width="32" height="4" rx="2" fill="#3BA4F0"/>
+  <text x="72" y="180" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Channels</text>
+  <text x="72" y="209" class="f" font-size="17" fill="#A3A3B5">Website widget, WhatsApp,</text>
+  <text x="72" y="232" class="f" font-size="17" fill="#A3A3B5">Gmail, admin dashboard</text>
+</g><g class="rise">
+  <rect x="435" y="128" width="330" height="124" rx="16" fill="#181822" stroke="#3BA4F0" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="457" y="146" width="32" height="4" rx="2" fill="#3BA4F0"/>
+  <text x="457" y="180" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Nginx edge</text>
+  <text x="457" y="209" class="f" font-size="17" fill="#A3A3B5">TLS, rate limiting,</text>
+  <text x="457" y="232" class="f" font-size="17" fill="#A3A3B5">webhook guard</text>
+</g><g class="rise">
+  <rect x="820" y="128" width="330" height="124" rx="16" fill="#181822" stroke="#3BA4F0" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="842" y="146" width="32" height="4" rx="2" fill="#3BA4F0"/>
+  <text x="842" y="180" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Sales agent</text>
+  <text x="842" y="209" class="f" font-size="17" fill="#A3A3B5">FastAPI + LangGraph,</text>
+  <text x="842" y="232" class="f" font-size="17" fill="#A3A3B5">isolated per tenant</text>
+</g><g class="rise">
+  <rect x="820" y="300" width="330" height="124" rx="16" fill="#181822" stroke="#3DD68C" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="842" y="318" width="32" height="4" rx="2" fill="#3DD68C"/>
+  <text x="842" y="352" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Agentic RAG loop</text>
+  <text x="842" y="381" class="f" font-size="17" fill="#A3A3B5">Retrieve → grade → rewrite</text>
+  <text x="842" y="404" class="f" font-size="17" fill="#A3A3B5">over 4 knowledge stores</text>
+</g><g class="rise">
+  <rect x="435" y="300" width="330" height="124" rx="16" fill="#181822" stroke="#3DD68C" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="457" y="318" width="32" height="4" rx="2" fill="#3DD68C"/>
+  <text x="457" y="352" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Grounding check</text>
+  <text x="457" y="381" class="f" font-size="17" fill="#A3A3B5">Every claim cited;</text>
+  <text x="457" y="404" class="f" font-size="17" fill="#A3A3B5">99.5% citation precision</text>
+</g><g class="rise">
+  <rect x="50" y="300" width="330" height="124" rx="16" fill="#181822" stroke="#3DD68C" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="72" y="318" width="32" height="4" rx="2" fill="#3DD68C"/>
+  <text x="72" y="352" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Retrieval traces</text>
+  <text x="72" y="381" class="f" font-size="17" fill="#A3A3B5">Every search logged to an</text>
+  <text x="72" y="404" class="f" font-size="17" fill="#A3A3B5">answer-quality dashboard</text>
+</g><g class="rise">
+  <rect x="50" y="472" width="330" height="124" rx="16" fill="#181822" stroke="#9B8CFF" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="72" y="490" width="32" height="4" rx="2" fill="#9B8CFF"/>
+  <text x="72" y="524" class="f" font-size="22" font-weight="700" fill="#F5F5F8">Any MCP client</text>
+  <text x="72" y="553" class="f" font-size="17" fill="#A3A3B5">Other AI assistants use</text>
+  <text x="72" y="576" class="f" font-size="17" fill="#A3A3B5">Vendra as a tool</text>
+</g><g class="rise">
+  <rect x="435" y="472" width="330" height="124" rx="16" fill="#181822" stroke="#9B8CFF" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="457" y="490" width="32" height="4" rx="2" fill="#9B8CFF"/>
+  <text x="457" y="524" class="f" font-size="22" font-weight="700" fill="#F5F5F8">OAuth 2.1</text>
+  <text x="457" y="553" class="f" font-size="17" fill="#A3A3B5">PKCE, dynamic client reg.,</text>
+  <text x="457" y="576" class="f" font-size="17" fill="#A3A3B5">refresh-token rotation</text>
+</g><g class="rise">
+  <rect x="820" y="472" width="330" height="124" rx="16" fill="#181822" stroke="#9B8CFF" stroke-opacity=".5" stroke-width="1.5"/>
+  <rect x="842" y="490" width="32" height="4" rx="2" fill="#9B8CFF"/>
+  <text x="842" y="524" class="f" font-size="22" font-weight="700" fill="#F5F5F8">MCP server</text>
+  <text x="842" y="553" class="f" font-size="17" fill="#A3A3B5">9 tools, per-tool scopes,</text>
+  <text x="842" y="576" class="f" font-size="17" fill="#A3A3B5">full audit log</text>
+</g><line class="flow" x1="380" y1="190.0" x2="435" y2="190.0" stroke="#3BA4F0" stroke-width="3"/><path d="M435 190.0l-10 -6v12z" fill="#3BA4F0"/><line class="flow" x1="765" y1="190.0" x2="820" y2="190.0" stroke="#3BA4F0" stroke-width="3"/><path d="M820 190.0l-10 -6v12z" fill="#3BA4F0"/><line class="flow" x1="985.0" y1="252" x2="985.0" y2="300" stroke="#3DD68C" stroke-width="3"/><path d="M985.0 300l-6 -10h12z" fill="#3DD68C"/><line class="flow" x1="820" y1="362.0" x2="765" y2="362.0" stroke="#3DD68C" stroke-width="3"/><path d="M765 362.0l10 -6v12z" fill="#3DD68C"/><line class="flow" x1="435" y1="362.0" x2="380" y2="362.0" stroke="#3DD68C" stroke-width="3"/><path d="M380 362.0l10 -6v12z" fill="#3DD68C"/><line class="flow" x1="380" y1="534.0" x2="435" y2="534.0" stroke="#9B8CFF" stroke-width="3"/><path d="M435 534.0l-10 -6v12z" fill="#9B8CFF"/><line class="flow" x1="765" y1="534.0" x2="820" y2="534.0" stroke="#9B8CFF" stroke-width="3"/><path d="M820 534.0l-10 -6v12z" fill="#9B8CFF"/><text x="50" y="456" class="f" font-size="14" font-weight="700" letter-spacing="2" fill="#9B8CFF">SECOND DOOR: OTHER AI APPS, VIA MCP</text>
+<text x="50" y="640" class="f" font-size="14" font-weight="700" letter-spacing="2.5" fill="#6B6B80">UNDER THE HOOD</text>
+<rect x="50" y="658" width="201" height="28" rx="14" fill="#3BA4F0" fill-opacity=".14" stroke="#3BA4F0" stroke-opacity=".45"/><text x="150.5" y="676.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#3BA4F0">Postgres + pgvector</text><rect x="261" y="658" width="246" height="28" rx="14" fill="#3DD68C" fill-opacity=".14" stroke="#3DD68C" stroke-opacity=".45"/><text x="384.0" y="676.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#3DD68C">81-question eval harness</text><rect x="517" y="658" width="237" height="28" rx="14" fill="#9B8CFF" fill-opacity=".14" stroke="#9B8CFF" stroke-opacity=".45"/><text x="635.5" y="676.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#9B8CFF">26 MCP end-to-end tests</text><rect x="764" y="658" width="174" height="28" rx="14" fill="#3BA4F0" fill-opacity=".14" stroke="#3BA4F0" stroke-opacity=".45"/><text x="851.0" y="676.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#3BA4F0">Rate-limit tests</text><rect x="948" y="658" width="183" height="28" rx="14" fill="#F5A044" fill-opacity=".14" stroke="#F5A044" stroke-opacity=".45"/><text x="1039.5" y="676.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#F5A044">Background worker</text><rect x="50" y="700" width="201" height="28" rx="14" fill="#D06CC0" fill-opacity=".14" stroke="#D06CC0" stroke-opacity=".45"/><text x="150.5" y="718.5" text-anchor="middle" class="f" font-size="15" font-weight="600" fill="#D06CC0">One-switch rollback</text>
+</svg>
